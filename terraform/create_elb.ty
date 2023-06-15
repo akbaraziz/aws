@@ -1,0 +1,19 @@
+provider "aws" {
+  region = "us-west-2"
+}
+
+resource "aws_elb" "example" {
+  name               = "example-elb"
+  availability_zones = ["us-west-2a", "us-west-2b"]
+
+  listener {
+    instance_port     = 80
+    instance_protocol = "http"
+    lb_port           = 80
+    lb_protocol       = "http"
+  }
+
+  tags = {
+    Name = "example"
+  }
+}
