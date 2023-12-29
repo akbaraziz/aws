@@ -1,11 +1,11 @@
 # Get AWS Current Account Details
-aws sts get-caller-identity
+```aws sts get-caller-identity
 
 # Create S3 Bucket
-aws s3api create-bucket --bucket "account ID" --region us-east-1
+```aws s3api create-bucket --bucket "account ID" --region us-east-1
 
 # Enumerate S3 Buckets
-aws s3api list-buckets --query "Buckets[].Name"
+```aws s3api list-buckets --query "Buckets[].Name"
 
 # List Contents of S3 Bucket
 aws s3 ls s3://"bucket name" --region us-east-1
