@@ -1,5 +1,5 @@
 # Get AWS Current Account Details
-```aws sts get-caller-identity
+```aws sts get-caller-identity```
 
 # Create S3 Bucket
 ```aws s3api create-bucket --bucket "account ID" --region us-east-1
