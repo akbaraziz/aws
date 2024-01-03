@@ -12,7 +12,7 @@
 
 #### Tag S3 Bucket
 ```export S3BUCKET=`aws s3api list-buckets --query "Buckets[].Name" | jq -r ".[0]"`
-```aws s3api put-bucket-versioning --bucket $S3BUCKET --versioning-configuration Status=Enabled```
+aws s3api put-bucket-versioning --bucket $S3BUCKET --versioning-configuration Status=Enabled```
 
 #### Download Contents of S3 Bucket
 ```aws s3 sync . s3://"bucket name"```
